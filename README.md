@@ -9,10 +9,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">PACTF2023 Problems</h3>
+  <h3 align="center">PACTF2023 Challenge</h3>
 
   <p align="center">
-    Problem setup instructions and how to set up your own linux enviro for development.
+    Challenge setup instructions and how to set up your own linux enviro for development.
   </p>
 </div>
 
@@ -23,14 +23,14 @@
 <ol>
   <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
   <li><a href="#get-linux-terminal">Get Linux</a></li>
-  <li><a href="#making-problems">Making Problems</a></li>
+  <li><a href="#making-challenges">Making Challenges</a></li>
   <li><a href="#roadmap">Roadmap</a></li>
   <li><a href="#contact">Contact</a></li>
 </ol>
 
 
 
-<!-- PROBLEM TEMPLATE -->
+<!-- Challenge TEMPLATE -->
 ## Get this repo onto your computer
 
 ### For the absolute beginner to github (I don't even have an account, help me!)
@@ -107,18 +107,18 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 
 
 
-<!-- MAKING PROBLEMS -->
-## Making Problems
+<!-- MAKING CHALLENGES -->
+## Making Challenges
 
-Here's the default framework for how the problems should look in this repo:
+Here's the default framework for how the challenges should look in this repo:
 
-Within each difficulty-category folder, there should be problem folders named after difficulty-category-number [from here](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0)
+Within each difficulty-category folder, there should be challenge folders named after difficulty-category-number [from here](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0)
 
-Every problem folder should have a `flag.txt` that contains the flag and any other relevant info <b>THE FLAG SHOULD ONLY BE IN THIS FILE; IT MUST NOT BE ANYWHERE ELSE WITHIN THE PROBLEM FOLDER IN PLAINTEXT</b>; and a `statement.txt` file that has the title (top line of the file should be `TITLE: <title here>` and the problem statement two lines below. Check out completed problems for an example.
+Every challenge folder should have a `flag.txt` that contains the flag and any other relevant info <b>THE FLAG SHOULD ONLY BE IN THIS FILE; IT MUST NOT BE ANYWHERE ELSE WITHIN THE CHALLENGE FOLDER IN PLAINTEXT</b>; and a `statement.txt` file that has the title (top line of the file should be `TITLE: <title here>` and the challenge statement two lines below. Check out completed challenges for an example.
 
-Relevant files should also be within the problem folder. You can include the solution in a `sol.txt` file or within the `flag.txt` if you want.
+Relevant files should also be within the challenge folder. You can include the solution in a `sol.txt` file or within the `flag.txt` if you want.
 
-Once you've completed a problem, 
+Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0), and notify Sol in the 
 
 <!-- ROADMAP -->
 ## Roadmap
