@@ -1,0 +1,6 @@
+TITLE: Regex1
+
+Sol made a long string of pactf flags that looks something like pactf{random_string}pactf{random_string}pactf{random_string}, but he put his own name in front of some of the flags, looking like pactf{sol+random_string}!
+Now we don't like Sol, so how can we filter out every flag that begins with his name, regardless of capitalization?
+
+Flag format: any valid regex expression that comples said task.
