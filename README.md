@@ -1,9 +1,11 @@
 <div id="top"></div>
 
+<!-- Instruction documentation written by Sol Kim -->
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/Dynosol/pactf23">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -21,7 +23,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#get-linux-terminal">Get Linux</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -37,7 +39,7 @@
 ### For the absolute beginner to github (I don't even have an account, help me!)
 * Create an account, remember the username and password
 * Download <a href="https://desktop.github.com/">github desktop</a> (easiest way to clone) onto your computer
-* After you've logged into github desktop, click `Code`>`Open with GitHub Desktop`\
+* After you've logged into github desktop, click `Code`>`Open with GitHub Desktop`
 * Choose the destination for where you'll keep it
 
 ### I have an account and a terminal
@@ -57,28 +59,35 @@
 
 If you are unfamiliar with git commands, use `man git` or read documentation <a href="https://git-scm.com/docs">here</a>
 
-The basic commands you'll use are:
-* `git status` to check which modifications you've made and which are staged
-* `git add *` or `git add <filepath>` to add files to your commit
-* `git commit -m "<commit message>"` to stage those modifications to your commit
-* `git push` to push the commit
+Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for instructions on how to make your own pull requests
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-### Built With
+## Get Linux Terminal
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+### Linux terminal running on Windows (WSL)
+* An ubuntu-based WSL should be pre-installed on your Windows 10/11 machine, but if you want Debian (recommended) or if you don't have it for some reason:
+* run `wsl --install -d Debian` within the Windows PowerShell on an admin account (you can just search powershell in windows searchbar)
+* Installing [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started) is recommended
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+### Virtual Machine (beginner)
+* For beginners I'd recommend getting a VM-based distro of Kali Linux for CTF development and practice
+* Virtual Machine is useful for not destroying your own computer (I've destroyed several VMs)
+* Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
+* Get [Kali Linux for VirtualBox](https://kali.download/virtual-images/kali-2022.2/kali-linux-2022.2-virtualbox-amd64.ova)
+* Boot VMBox and press NEW:
+<img src="images/vmbox1.jpg">
+
+
+
+
+### Virtual Machine (beginner++)
+* If you don't want the VM-based distro, download the [bare metal iso](https://cdimage.kali.org/kali-2022.2/kali-linux-2022.2-installer-amd64.iso)
+* Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
+* 
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
