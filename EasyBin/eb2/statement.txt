@@ -1,0 +1,3 @@
+TITLE: Power Overflowing
+
+Sol made his first program in C, but it's super vulnerable. Can you overflow a buffer correctly to get the flag?
