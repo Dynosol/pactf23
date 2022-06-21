@@ -112,7 +112,7 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 
 Here's the default framework for how the challenges should look in this repo:
 
-Within each difficulty-category folder, there should be challenge folders named after difficulty-category-number [from here](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0)
+Within each difficulty-category folder, there should be challenge folders named after difficulty-category-number [from here](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit?usp=sharing)
 
 Every challenge folder should have a `flag.txt` that contains the flag and any other relevant info <b>THE FLAG SHOULD ONLY BE IN THIS FILE; IT MUST NOT BE ANYWHERE ELSE WITHIN THE CHALLENGE FOLDER IN PLAINTEXT</b>; and a `statement.txt` file that has the title (top line of the file should be `TITLE: <title here>` and the challenge statement two lines below. Check out completed challenges for an example.
 
@@ -120,7 +120,7 @@ Relevant files should also be within the challenge folder. You can include the s
 
 FLAG FORMAT: `pactf{flagname_relating_to_challenge_here_<HASH>}` in the flag, use <a href"https://en.wikipedia.org/wiki/Leet">leet</a>. Generate a 16 character hash using hashgen.py located within the main folder (in a terminal do `./hashgen.py 16` and copy paste that where <HASH> is above. Look at any completed challenge for reference)
 
-Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0), and notify Sol in the [discord](https://discord.gg/zaCzBhtn26)
+Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit?usp=sharing), and notify Sol in the [discord](https://discord.gg/zaCzBhtn26)
 
 <!-- ROADMAP -->
 ## Roadmap
