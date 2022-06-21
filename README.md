@@ -118,6 +118,8 @@ Every challenge folder should have a `flag.txt` that contains the flag and any o
 
 Relevant files should also be within the challenge folder. You can include the solution in a `sol.txt` file or within the `flag.txt` if you want.
 
+FLAG FORMAT: `pactf{flagname_relating_to_challenge_here_<HASH>}` in the flag, use <a href"https://en.wikipedia.org/wiki/Leet">leet</a>. Generate a 16 character hash using hashgen.py located within the main folder (in a terminal do `./hashgen.py 16` and copy paste that where <HASH> is above. Look at any completed challenge for reference)
+
 Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0), and notify Sol in the [discord](https://discord.gg/zaCzBhtn26)
 
 <!-- ROADMAP -->
