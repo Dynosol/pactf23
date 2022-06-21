@@ -1,30 +1,4 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -33,19 +7,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">PACTF2023 Problems</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    Problem setup instructions and how to set up your own linux enviro for development.
   </p>
 </div>
 
@@ -55,20 +20,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -79,21 +31,37 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- PROBLEM TEMPLATE -->
+## Get this repo onto your computer
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### For the absolute beginner to github (I don't even have an account, help me!)
+* Create an account, remember the username and password
+* Download <a href="https://desktop.github.com/">github desktop</a> (easiest way to clone) onto your computer
+* After you've logged into github desktop, click `Code`>`Open with GitHub Desktop`\
+* Choose the destination for where you'll keep it
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+### I have an account and a terminal
+* `cd` into the directory you want this repo to be within
+* `git clone https://github.com/Dynosol/pactf23.git`
+* Enter your username
+* Enter your Personal Access Token where it asks for your password (it won't show, but press enter anyway)
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+### I don't have a PAT
+* Within github.com go to `Settings`>`Developer settings`>`Personal access tokens`>`Generate new token`
+* Enter your password
+* Name it whatever in the `Note` section; doesn't really matter what
+* Just select `repo`, unless you want something else and know what you're doing
+* Scroll down and `Generate token`
+* <b>COPY PASTE</b> the token that looks like `ghp_<something>` into a text file or save it in some way. You <b>WONT</b> be able to see it ever again.
+* Use this for your password in the terminal
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+If you are unfamiliar with git commands, use `man git` or read documentation <a href="https://git-scm.com/docs">here</a>
 
-Use the `BLANK_README.md` to get started.
+The basic commands you'll use are:
+* `git status` to check which modifications you've made and which are staged
+* `git add *` or `git add <filepath>` to add files to your commit
+* `git commit -m "<commit message>"` to stage those modifications to your commit
+* `git push` to push the commit
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
