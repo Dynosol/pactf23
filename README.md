@@ -20,20 +20,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -47,9 +34,7 @@
 <!-- PROBLEM TEMPLATE -->
 ## Get this repo onto your computer
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
-### For the absolute beginner to github (I don't even have an account, help me!):
+### For the absolute beginner to github (I don't even have an account, help me!)
 * Create an account, remember the username and password
 * Download <a href="https://desktop.github.com/">github desktop</a> (easiest way to clone) onto your computer
 * After you've logged into github desktop, click `Code`>`Open with GitHub Desktop`\
@@ -70,9 +55,13 @@
 * <b>COPY PASTE</b> the token that looks like `ghp_<something>` into a text file or save it in some way. You <b>WONT</b> be able to see it ever again.
 * Use this for your password in the terminal
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+If you are unfamiliar with git commands, use `man git` or read documentation <a href="https://git-scm.com/docs">here</a>
 
-Use the `BLANK_README.md` to get started.
+The basic commands you'll use are:
+* `git status` to check which modifications you've made and which are staged
+* `git add *` or `git add <filepath>` to add files to your commit
+* `git commit -m "<commit message>"` to stage those modifications to your commit
+* `git push` to push the commit
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
