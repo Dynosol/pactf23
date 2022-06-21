@@ -1,0 +1,1 @@
+grep -F 'pactf' file.txt | grep -o -E 'pactf.{50}'
