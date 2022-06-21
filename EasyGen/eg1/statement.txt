@@ -1,0 +1,5 @@
+TITLE: What the Hex do we do here?
+
+What is 0x41 in ascii?
+
+Return flag in pactf{<answer>} format.
