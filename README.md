@@ -24,10 +24,9 @@
   <ol>
     <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
     <li><a href="#get-linux-terminal">Get Linux</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#making-problems">Making Problems</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -64,7 +63,7 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
+<!-- GETTING LINUX -->
 ## Get Linux Terminal
 
 ### Linux terminal running on Windows (WSL)
@@ -77,6 +76,7 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 * Virtual Machine is useful for not destroying your own computer (I've destroyed several VMs)
 * Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
 * Get [Kali Linux for VirtualBox](https://kali.download/virtual-images/kali-2022.2/kali-linux-2022.2-virtualbox-amd64.ova)
+* 
 
 
 
@@ -84,11 +84,11 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 * If you don't want the VM-based distro, download the [bare metal iso](https://cdimage.kali.org/kali-2022.2/kali-linux-2022.2-installer-amd64.iso)
 * Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
 * Boot VMBox and press NEW:
-<img src="images/vmbox1.jpg">
+* <img src="images/vmbox1.jpg">
 * Name it whatever but choose Linux and Debian (change download folder if you want)
-<img src="images/vmbox2.jpg">
+* <img src="images/vmbox2.jpg">
 * Depending on the memory on your system, choose less than half of what you've got.
-* [Check RAM on MAC](https://www.macinstruct.com/tutorials/see-how-much-ram-is-installed-in-your-mac/) [Check RAM on Windows 10](https://www.crucial.com/articles/about-memory/how-to-check-ram-windows-10) [Check RAM on Windows 11](https://www.xda-developers.com/find-out-ram-specs-windows-11/)
+* [Check RAM on MAC](https://www.macinstruct.com/tutorials/see-how-much-ram-is-installed-in-your-mac/) / [Check RAM on Windows 10](https://www.crucial.com/articles/about-memory/how-to-check-ram-windows-10) / [Check RAM on Windows 11](https://www.xda-developers.com/find-out-ram-specs-windows-11/)
 * Choose `Create a virtual hard disk now`
 * Choose `VDI`
 * Choose `Dynamically allocated`
@@ -97,15 +97,16 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 * Go into settings, make sure `System`>`Motherboard`>`Hard Disk` and `Optical` are enabled.
 * Set `System`>`Processor`>`Processor(s)` to less than half again; 2 should be fine. 1 is okay too.
 * Set `Display`>`Screen`>`Video Memory:` to max.
-* 
+* Click `Start`>`(Folder icon next to the dropdown menu)`>`Add`>`(Find where you downloaded the kali linux iso)`>`Choose`>`Start`
+* If you need extra help ask me (the error I'm anticipating that you might get is related to enabling virtualization -> try to fix it yourself if you're brave but don't destroy your bios)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- MAKING PROBLEMS -->
+## Making Problems
 
 
 <!-- ROADMAP -->
