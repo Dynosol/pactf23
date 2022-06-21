@@ -9,7 +9,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">PACTF2023 Challenge</h3>
+  <h3 align="center">PACTF2023 Challenges</h3>
 
   <p align="center">
     Challenge setup instructions and how to set up your own linux enviro for development.
@@ -118,16 +118,20 @@ Every challenge folder should have a `flag.txt` that contains the flag and any o
 
 Relevant files should also be within the challenge folder. You can include the solution in a `sol.txt` file or within the `flag.txt` if you want.
 
-Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0), and notify Sol in the 
+Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0), and notify Sol in the [discord](https://discord.gg/zaCzBhtn26)
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
+- [ ] Easy General
+- [ ] Easy Binary
+- [ ] Easy Crypto
+- [ ] Easy Reverse
+- [ ] Easy Web
+- [ ] Hard General
+- [ ] Hard Binary
+- [ ] Hard Crypto
+- [ ] Hard Web
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -137,7 +141,7 @@ Once you've completed a challenge, fork+push it to this repo, note it in the [sp
 
 [Email](mailto:sol.evergreen@gmail.com) Sol (if you wanna be formal for some reason)
 
-Reach out on discord - Dynosol#1094
+[Ask in the discord](https://discord.gg/zaCzBhtn26) or DM me there at Dynosol#1094
 
 Text me (do this only if you need help immediately)
 
