@@ -10,7 +10,7 @@
   <h3 align="center">PACTF2023 Problems</h3>
 
   <p align="center">
-    How to set up your own linux environment and the problem setup instructions.
+    Problem setup instructions and how to set up your own linux enviro for development.
   </p>
 </div>
 
@@ -44,17 +44,31 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- PROBLEM TEMPLATE -->
+## Get this repo onto your computer
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+### For the absolute beginner to github (I don't even have an account, help me!):
+* Create an account, remember the username and password
+* Download <a href="https://desktop.github.com/">github desktop</a> (easiest way to clone) onto your computer
+* After you've logged into github desktop, click `Code`>`Open with GitHub Desktop`\
+* Choose the destination for where you'll keep it
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+### I have an account and a terminal
+* `cd` into the directory you want this repo to be within
+* `git clone https://github.com/Dynosol/pactf23.git`
+* Enter your username
+* Enter your Personal Access Token where it asks for your password (it won't show, but press enter anyway)
+
+### I don't have a PAT
+* Within github.com go to `Settings`>`Developer settings`>`Personal access tokens`>`Generate new token`
+* Enter your password
+* Name it whatever in the `Note` section; doesn't really matter what
+* Just select `repo`, unless you want something else and know what you're doing
+* Scroll down and `Generate token`
+* <b>COPY PASTE</b> the token that looks like `ghp_<something>` into a text file or save it in some way. You <b>WONT</b> be able to see it ever again.
+* Use this for your password in the terminal
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
