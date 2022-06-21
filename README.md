@@ -19,16 +19,14 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
-    <li><a href="#get-linux-terminal">Get Linux</a></li>
-    <li><a href="#making-problems">Making Problems</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+<summary>Table of Contents</summary>
+<ol>
+  <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
+  <li><a href="#get-linux-terminal">Get Linux</a></li>
+  <li><a href="#making-problems">Making Problems</a></li>
+  <li><a href="#roadmap">Roadmap</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ol>
 
 
 
@@ -76,14 +74,17 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 * Virtual Machine is useful for not destroying your own computer (I've destroyed several VMs)
 * Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
 * Get [Kali Linux for VirtualBox](https://kali.download/virtual-images/kali-2022.2/kali-linux-2022.2-virtualbox-amd64.ova)
-* 
+* Boot VMBox and press `File`>`Import Appliance`
+* Click the folder with the green arrow and find the `.ova` file you just downloaded
+* Click `Next`>`Import`>`Agree`
+* Login with username `kali` and password `kali`
 
 
 
 ### Virtual Machine (beginner++)
 * If you don't want the VM-based distro, download the [bare metal iso](https://cdimage.kali.org/kali-2022.2/kali-linux-2022.2-installer-amd64.iso)
 * Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
-* Boot VMBox and press NEW:
+* Boot VMBox and press `New`:
 * <img src="images/vmbox1.jpg">
 * Name it whatever but choose Linux and Debian (change download folder if you want)
 * <img src="images/vmbox2.jpg">
@@ -98,6 +99,7 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 * Set `System`>`Processor`>`Processor(s)` to less than half again; 2 should be fine. 1 is okay too.
 * Set `Display`>`Screen`>`Video Memory:` to max.
 * Click `Start`>`(Folder icon next to the dropdown menu)`>`Add`>`(Find where you downloaded the kali linux iso)`>`Choose`>`Start`
+* Go through the setup process
 * If you need extra help ask me (the error I'm anticipating that you might get is related to enabling virtualization -> try to fix it yourself if you're brave but don't destroy your bios)
 
 
@@ -108,6 +110,13 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 <!-- MAKING PROBLEMS -->
 ## Making Problems
 
+Here's the default framework for how the problems should look in this repo:
+
+Within each difficulty-category folder, there should be problem folders named after difficulty-category-number [from here](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit#gid=0)
+
+Every problem folder should have a `flag.txt` that contains the flag and any other relevant info <b>THE FLAG SHOULD ONLY BE IN THIS FILE; IT MUST NOT BE ANYWHERE ELSE WITHIN THE PROBLEM FOLDER IN PLAINTEXT</b>; and a `statement.txt` file that has the title (top line of the file should be `TITLE: <title here>` and the problem statement two lines below. Check out completed problems for an example.
+
+Relevant files should also be within the problem folder. You can include the solution in a `sol.txt` file.
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -117,10 +126,6 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 - [ ] Add Additional Templates w/ Examples
 - [ ] Add "components" document to easily copy & paste sections of the readme
 - [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -128,8 +133,10 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+[Email](mailto:sol.evergreen@gmail.com) Sol (if you wanna be formal for some reason)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Reach out on discord - Dynosol#1094
+
+Text me (do this only if you need help immediately)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
