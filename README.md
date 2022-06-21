@@ -116,7 +116,9 @@ Within each difficulty-category folder, there should be problem folders named af
 
 Every problem folder should have a `flag.txt` that contains the flag and any other relevant info <b>THE FLAG SHOULD ONLY BE IN THIS FILE; IT MUST NOT BE ANYWHERE ELSE WITHIN THE PROBLEM FOLDER IN PLAINTEXT</b>; and a `statement.txt` file that has the title (top line of the file should be `TITLE: <title here>` and the problem statement two lines below. Check out completed problems for an example.
 
-Relevant files should also be within the problem folder. You can include the solution in a `sol.txt` file.
+Relevant files should also be within the problem folder. You can include the solution in a `sol.txt` file or within the `flag.txt` if you want.
+
+Once you've completed a problem, 
 
 <!-- ROADMAP -->
 ## Roadmap
