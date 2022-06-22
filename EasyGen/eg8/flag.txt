@@ -1,7 +1,0 @@
-ACCEPTABLE ANSWERS:
-
-pactf{(?![sS][oO][lL])\w+}
-
-pactf{(?!(?i)sol)\w+}
-
-other answers should be picked up by the autograder
