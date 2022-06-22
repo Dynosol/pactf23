@@ -133,6 +133,7 @@ Once you've completed a challenge, fork+push it to this repo, note it in the [sp
 - [ ] Hard General
 - [ ] Hard Binary
 - [ ] Hard Crypto
+- [ ] Hard Reverse
 - [ ] Hard Web
 
 <p align="right">(<a href="#top">back to top</a>)</p>
