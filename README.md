@@ -9,31 +9,28 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">PACTF2023 Problems</h3>
+  <h3 align="center">PACTF2023 Challenges</h3>
 
   <p align="center">
-    Problem setup instructions and how to set up your own linux enviro for development.
+    Challenge setup instructions and how to set up your own linux enviro for development.
   </p>
 </div>
 
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
-    <li><a href="#get-linux-terminal">Get Linux</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+<summary>Table of Contents</summary>
+<ol>
+  <li><a href="#get-this-repo-onto-your-computer">Download</a></li>
+  <li><a href="#get-linux-terminal">Get Linux</a></li>
+  <li><a href="#making-challenges">Making Challenges</a></li>
+  <li><a href="#roadmap">Roadmap</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ol>
 
 
 
-<!-- PROBLEM TEMPLATE -->
+<!-- Challenge TEMPLATE -->
 ## Get this repo onto your computer
 
 ### For the absolute beginner to github (I don't even have an account, help me!)
@@ -64,7 +61,7 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
+<!-- GETTING LINUX -->
 ## Get Linux Terminal
 
 ### Linux terminal running on Windows (WSL)
@@ -77,154 +74,77 @@ Check [this](https://jarv.is/notes/how-to-pull-request-fork-github/) out for ins
 * Virtual Machine is useful for not destroying your own computer (I've destroyed several VMs)
 * Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
 * Get [Kali Linux for VirtualBox](https://kali.download/virtual-images/kali-2022.2/kali-linux-2022.2-virtualbox-amd64.ova)
-* Boot VMBox and press NEW:
-<img src="images/vmbox1.jpg">
-
+* Boot VMBox and press `File`>`Import Appliance`
+* Click the folder with the green arrow and find the `.ova` file you just downloaded
+* Click `Next`>`Import`>`Agree`
+* Login with username `kali` and password `kali`
 
 
 
 ### Virtual Machine (beginner++)
 * If you don't want the VM-based distro, download the [bare metal iso](https://cdimage.kali.org/kali-2022.2/kali-linux-2022.2-installer-amd64.iso)
 * Get [VMBox 6.1](https://www.virtualbox.org/wiki/Downloads)
-* 
+* Boot VMBox and press `New`:
+* <img src="images/vmbox1.jpg">
+* Name it whatever but choose Linux and Debian (change download folder if you want)
+* <img src="images/vmbox2.jpg">
+* Depending on the memory on your system, choose less than half of what you've got.
+* [Check RAM on MAC](https://www.macinstruct.com/tutorials/see-how-much-ram-is-installed-in-your-mac/) / [Check RAM on Windows 10](https://www.crucial.com/articles/about-memory/how-to-check-ram-windows-10) / [Check RAM on Windows 11](https://www.xda-developers.com/find-out-ram-specs-windows-11/)
+* Choose `Create a virtual hard disk now`
+* Choose `VDI`
+* Choose `Dynamically allocated`
+* Set a size that makes sense for how much you have on your system. Minimum 10 GB; I'd recommend between 30-80 GB.
+* Click `Create`
+* Go into settings, make sure `System`>`Motherboard`>`Hard Disk` and `Optical` are enabled.
+* Set `System`>`Processor`>`Processor(s)` to less than half again; 2 should be fine. 1 is okay too.
+* Set `Display`>`Screen`>`Video Memory:` to max.
+* Click `Start`>`(Folder icon next to the dropdown menu)`>`Add`>`(Find where you downloaded the kali linux iso)`>`Choose`>`Start`
+* Go through the setup process
+* If you need extra help ask me (the error I'm anticipating that you might get is related to enabling virtualization -> try to fix it yourself if you're brave but don't destroy your bios)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- MAKING CHALLENGES -->
+## Making Challenges
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Here's the default framework for how the challenges should look in this repo:
 
-### Prerequisites
+Within each difficulty-category folder, there should be challenge folders named after difficulty-category-number [from here](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit?usp=sharing)
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Every challenge folder should have a `flag.txt` that contains the flag and any other relevant info <b>THE FLAG SHOULD ONLY BE IN THIS FILE; IT MUST NOT BE ANYWHERE ELSE WITHIN THE CHALLENGE FOLDER IN PLAINTEXT</b>; and a `statement.txt` file that has the title (top line of the file should be `TITLE: <title here>` and the challenge statement two lines below. Check out completed challenges for an example.
 
-### Installation
+Relevant files should also be within the challenge folder. You can include the solution in a `sol.txt` file or within the `flag.txt` if you want.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+FLAG FORMAT: `pactf{flagname_relating_to_challenge_here_<HASH>}` in the flag, use <a href"https://en.wikipedia.org/wiki/Leet">leet</a>. Generate a 16 character hash using hashgen.py located within the main folder (in a terminal do `./hashgen.py 16` and copy paste that where <HASH> is above. Look at any completed challenge for reference)
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+Once you've completed a challenge, fork+push it to this repo, note it in the [spreadsheet](https://docs.google.com/spreadsheets/d/1YVdPeC5vK3_2U2FbJn_A0n7G5LMVOxgZn6zYWuO7XK8/edit?usp=sharing), and notify Sol in the [discord](https://discord.gg/zaCzBhtn26)
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [ ] Easy General
+- [ ] Easy Binary
+- [ ] Easy Crypto
+- [ ] Easy Reverse
+- [ ] Easy Web
+- [ ] Hard General
+- [ ] Hard Binary
+- [ ] Hard Crypto
+- [ ] Hard Web
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+[Email](mailto:sol.evergreen@gmail.com) Sol (if you wanna be formal for some reason)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+[Ask in the discord](https://discord.gg/zaCzBhtn26) or DM me there at Dynosol#1094
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Text me (do this only if you need help immediately)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
